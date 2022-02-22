@@ -7,9 +7,10 @@ namespace Async
     {
         static async Task<int> Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Hello BASTA! Spring 2022");
 
             ThreadDemo.Run();
+            ThreadPoolDemo.Run();
             AsynchronousProgrammingModelDemo.Run();
             EventBasedAsynchronousPatternDemo.Run();
             TaskBasedAsynchronousPatternDemo.Run();
@@ -21,7 +22,7 @@ namespace Async
             }
 
             await Task.Delay(1);
-
+            
             Console.WriteLine("Finished!");
             return 0;
         }

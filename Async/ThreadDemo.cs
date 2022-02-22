@@ -18,7 +18,7 @@ namespace Async
             Console.WriteLine("Classic thread demo");
 
             var t = new Thread(new ThreadStart(ThreadProc));
-            t.Start(); // this does NOT give the thread CPU time right away,
+            t.Start(); // this does NOT give the new thread CPU time right away,
                        // for that the main thread needs to to be preempted or yield
                        
             Thread.Sleep(1); // make sure we discard our quantum
